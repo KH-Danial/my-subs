@@ -2,14 +2,14 @@ name: Hourly Update
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # اجرای خودکار هر ۶ ساعت یک‌بار
-  workflow_dispatch:      # قابلیت اجرای دستی با دکمه Run workflow
+    - cron: '0 */6 * * *' # اجرای خودکار هر ۶ ساعت
+  workflow_dispatch:      # قابلیت اجرای دستی
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write     # اجازه برای ذخیره و آپدیت فایل sub_converted.txt
+      contents: write
 
     steps:
       - name: Checkout Repository
@@ -21,9 +21,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install Dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
+        run: pip install requests
 
       - name: Run Fetch and Filter Script
         run: python fetch_configs.py
@@ -33,5 +31,5 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add sub_converted.txt
-          git commit -m "Update sub_converted.txt with low-ping servers" || echo "No changes to commit"
+          git commit -m "Update sub_converted.txt" || echo "No changes"
           git push
