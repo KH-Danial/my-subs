@@ -8,7 +8,13 @@ urls = [
     'https://raw.githubusercontent.com/Epodonios/v2ray-configs/refs/heads/main/Splitted-By-Protocol/trojan.txt',
     'https://raw.githubusercontent.com/Epodonios/v2ray-configs/refs/heads/main/Sub2.txt',
     'https://raw.githubusercontent.com/itsyebekhe/PSG/main/lite/subscriptions/xray/base64/trojan',
-    'https://raw.githubusercontent.com/frank-vpl/servers/refs/heads/main/irbox'
+    'https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/all_extracted_configs.txt',
+    'https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/refs/heads/main/all_configs.txt',
+    'https://raw.githubusercontent.com/Epodonios/v2ray-configs/refs/heads/main/All_Configs_base64_Sub.txt',
+    'https://raw.githubusercontent.com/Epodonios/v2ray-configs/refs/heads/main/All_Configs_Sub.txt',
+    'https://raw.githubusercontent.com/barry-far/V2ray-config/main/All_Configs_base64_Sub.txt',
+    'https://raw.githubusercontent.com/frank-vpl/servers/refs/heads/main/irbox',
+    'https://www.v2nodes.com/subscriptions/country/all/?key=E8FF7329C918147'
 ]
 
 def decode_if_base64(content):
