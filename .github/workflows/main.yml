@@ -30,6 +30,6 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add sub_converted.txt
-          git commit -m "Update sub_converted.txt" || echo "No changes"
+          git add sub_converted.txt vless.txt reality.txt vmess.txt trojan.txt hysteria2.txt ss.txt socks.txt wireguard.txt
+          git commit -m "Update configs" || echo "No changes"
           git push
