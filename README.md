@@ -149,12 +149,29 @@
 
 ---
 
+## 🌐 کانفیگ‌های پروکسی - آپدیت خودکار هر ۶ ساعت
+
+> **ویترین کانفیگ‌ها:** در این مخزن مجموعه‌ای از کانفیگ‌های آماده و تست‌شده برای پروتکل‌های مختلف دور زدن محدودیت‌ها قرار دارد. این فایل‌ها به‌صورت خودکار هر ۶ ساعت یک‌بار بروزرسانی می‌شوند. برای مشاهده محتوای هر پروتکل، روی لینک مربوطه کلیک کنید.
+
+| پروتکل | توضیح | لینک مستقیم |
+|:---|:---|:---|
+| **Hysteria2** | پروتکل پرسرعت مبتنی بر QUIC | [مشاهده](https://raw.githubusercontent.com/redline-crypto/my-subs/main/hysteria2.txt) |
+| **Reality** | استتار ترافیک با کمترین ردپا | [مشاهده](https://raw.githubusercontent.com/redline-crypto/my-subs/main/reality.txt) |
+| **SOCKS** | پروکسی ساده برای TCP | [مشاهده](https://raw.githubusercontent.com/redline-crypto/my-subs/main/socks.txt) |
+| **Shadowsocks** | پروکسی رمزنگاری‌شده و سریع | [مشاهده](https://raw.githubusercontent.com/redline-crypto/my-subs/main/ss.txt) |
+| **Trojan** | دور زدن فیلترینگ با شبیه‌سازی HTTPS | [مشاهده](https://raw.githubusercontent.com/redline-crypto/my-subs/main/trojan.txt) |
+| **VLESS** | نسخه کم‌حجم و بدون رمزنگاری اضافه | [مشاهده](https://raw.githubusercontent.com/redline-crypto/my-subs/main/vless.txt) |
+| **VMess** | پروتکل اصلی V2Ray با رمزنگاری | [مشاهده](https://raw.githubusercontent.com/redline-crypto/my-subs/main/vmess.txt) |
+| **WireGuard** | تونل امن و بسیار سبک | [مشاهده](https://raw.githubusercontent.com/redline-crypto/my-subs/main/wireguard.txt) |
+
+> 💡 **نکته:** فایل‌ها هر ۶ ساعت آپدیت می‌شوند. برای دریافت آخرین نسخه، صفحه را رفرش کنید یا به‌صورت خودکار از لینک‌های بالا استفاده نمایید.
+
+---
+
 ## 📌 لینک‌های مرتبط
 
 - [مشاهده همه گفتگوها (Issues)](https://github.com/redline-crypto/my-subs/issues)
 - [صفحه نمایش گفتگو](chat.md)
 - [مخزن پروژه](https://github.com/redline-crypto/my-subs)
-
----
 
 </div>
