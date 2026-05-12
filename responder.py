@@ -32,7 +32,7 @@ for model in models:
         json={
             "model": model,
             "messages": [{"role": "user", "content": prompt}],
-            "max_tokens": 400
+            "max_tokens": 600
         }
     )
     if response.status_code == 200:
