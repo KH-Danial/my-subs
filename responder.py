@@ -2,6 +2,7 @@ import os, json, requests
 
 GITHUB_TOKEN = os.environ["GH_TOKEN"]
 
+# ۱. خواندن اطلاعات Issue
 event_path = os.environ["GITHUB_EVENT_PATH"]
 with open(event_path, "r", encoding="utf-8") as f:
     event = json.load(f)
@@ -13,23 +14,56 @@ repo = os.environ["GITHUB_REPOSITORY"]
 
 prompt = f"{title}\n\n{body}"
 
-response = requests.post(
+# ۲. مدل‌های هیئت منصفه
+models = [
+    "gpt-4o-mini",
+    "llama-3.1-8b"
+]
+
+answers = []
+
+for model in models:
+    response = requests.post(
+        "https://models.github.ai/inference/chat/completions",
+        headers={
+            "Authorization": f"Bearer {GITHUB_TOKEN}",
+            "Content-Type": "application/json"
+        },
+        json={
+            "model": model,
+            "messages": [{"role": "user", "content": prompt}],
+            "max_tokens": 400
+        }
+    )
+    if response.status_code == 200:
+        answer = response.json()["choices"][0]["message"]["content"]
+        answers.append(f"**{model}:**\n{answer}\n")
+    else:
+        answers.append(f"**{model}:** خطا {response.status_code}")
+
+# ۳. مدل قاضی برای جمع‌بندی
+jury_prompt = f"سوال کاربر: {prompt}\n\nپاسخ‌های متخصصان:\n" + "\n".join(answers) + "\n\nبا توجه به پاسخ‌های بالا، یک پاسخ نهایی جامع و دقیق به فارسی بنویس."
+
+final_response = requests.post(
     "https://models.github.ai/inference/chat/completions",
     headers={
         "Authorization": f"Bearer {GITHUB_TOKEN}",
         "Content-Type": "application/json"
     },
     json={
-        "model": "gpt-4o-mini",
-        "messages": [{"role": "user", "content": prompt}],
+        "model": "phi-4",
+        "messages": [{"role": "user", "content": jury_prompt}],
         "max_tokens": 800
     }
 )
 
-if response.status_code == 200:
-    answer = response.json()["choices"][0]["message"]["content"]
+if final_response.status_code == 200:
+    final_answer = final_response.json()["choices"][0]["message"]["content"]
 else:
-    answer = f"⚠️ خطا: {response.status_code}\n{response.text[:300]}"
+    final_answer = f"⚠️ خطا در جمع‌بندی: {final_response.status_code}"
+
+# ۴. ارسال کامنت نهایی
+comment_body = f"## 🏛️ هیئت منصفه هوش مصنوعی\n\n### 📣 پاسخ‌های متخصصان:\n" + "\n---\n".join(answers) + f"\n---\n### ⚖️ پاسخ نهایی (قاضی):\n{final_answer}"
 
 comment_url = f"https://api.github.com/repos/{repo}/issues/{issue_number}/comments"
 post = requests.post(
@@ -39,10 +73,10 @@ post = requests.post(
         "Accept": "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28"
     },
-    json={"body": f"**🤖 پاسخ هوش مصنوعی:**\n\n{answer}"}
+    json={"body": comment_body}
 )
 
 if post.status_code == 201:
-    print("✅ کامنت ثبت شد.")
+    print("✅ کامنت هیئت منصفه ثبت شد.")
 else:
-    print(f"❌ خطا در ثبت کامنت: {post.status_code} {post.text[:200]}")
+    print(f"❌ خطا: {post.status_code} {post.text[:200]}")
