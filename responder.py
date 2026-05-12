@@ -17,7 +17,7 @@ prompt = f"{title}\n\n{body}"
 # ۲. مدل‌های هیئت منصفه
 models = [
     "gpt-4o-mini",
-    "llama-3.1-8b-instruct"
+    "Meta-Llama-3.1-8B-Instruct"
 ]
 
 answers = []
