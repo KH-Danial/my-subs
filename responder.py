@@ -32,7 +32,7 @@ if image_url:
             "Content-Type": "application/json"
         },
         json={
-            "model": "Llama-3.2-11B-Vision-Instruct",
+            "model": "gpt-4o-mini",  # این خط اصلاح شد
             "messages": [
                 {
                     "role": "user",
