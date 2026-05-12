@@ -14,12 +14,12 @@ repo = os.environ["GITHUB_REPOSITORY"]
 
 prompt = f"{title}\n\n{body}"
 
-# ۲. مدل‌های هیئت منصفه - ۴ متخصص متن
+# ۲. مدل‌های هیئت منصفه - ۴ متخصص پایدار و تست‌شده
 models = [
-    "openai/gpt-4o-mini",
-    "DeepSeek-R1",
-    "xai/grok-3",
-    "mistral-small-2503"
+    "gpt-4o-mini",                        # ChatGPT
+    "DeepSeek-R1",                        # DeepSeek
+    "cohere/cohere-command-r-08-2024",    # Cohere (جایگزین Grok)
+    "Mistral-small-2503"                  # Mistral (جایگزین Gemini)
 ]
 
 forced_prompt = f"""⚠️ دستور: شما باید فقط به زبان فارسی پاسخ دهید. حق استفاده از هیچ زبان دیگری را ندارید.
@@ -60,7 +60,7 @@ final_response = requests.post(
         "Content-Type": "application/json"
     },
     json={
-        "model": "openai/gpt-4o-mini",
+        "model": "gpt-4o-mini",
         "messages": [{"role": "user", "content": jury_prompt}],
         "max_tokens": 800
     }
@@ -72,7 +72,7 @@ else:
     final_answer = f"⚠️ خطا در جمع‌بندی: {final_response.status_code}"
 
 # ۴. ارسال کامنت نهایی
-comment_body = f"## 🏛️ هیئت منصفه هوش مصنوعی\n\n### 👥 ۴ متخصص:\n- ChatGPT (GPT-4o mini)\n- DeepSeek R1\n- Grok 3 (xAI)\n- Mistral Small\n\n### 📣 پاسخ‌های متخصصان:\n" + "\n---\n".join(answers) + f"\n---\n### ⚖️ پاسخ نهایی (قاضی - GPT-4o mini):\n{final_answer}"
+comment_body = f"## 🏛️ هیئت منصفه هوش مصنوعی\n\n### 👥 ۴ متخصص:\n- ChatGPT (GPT-4o mini)\n- DeepSeek R1\n- Cohere Command R\n- Mistral Small\n\n### 📣 پاسخ‌های متخصصان:\n" + "\n---\n".join(answers) + f"\n---\n### ⚖️ پاسخ نهایی (قاضی - GPT-4o mini):\n{final_answer}"
 
 comment_url = f"https://api.github.com/repos/{repo}/issues/{issue_number}/comments"
 post = requests.post(
