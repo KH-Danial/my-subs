@@ -17,7 +17,7 @@ prompt = f"{title}\n\n{body}"
 # ۲. مدل‌های هیئت منصفه (دو متخصص متفاوت)
 models = [
     "gpt-4o-mini",            # متخصص همه‌فن‌حریف
-    "ai21-jamba-1.5-mini"     # متخصص خلاق و سریع
+    "cohere/cohere-command-r-08-2024"     # متخصص خلاق و سریع
 ]
 
 answers = []
