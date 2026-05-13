@@ -23,37 +23,60 @@ prompt = f"{title}\n\n{body}"
 combined_text = title + " " + body
 
 # ═══════════════════════════════════════════════════════════════
-# ۲. ابزارهای کمکی: تشخیص بازار و فراخوانی API
+# ۲. تشخیص بازار و فراخوانی API (نسخه اصلاح‌شده)
 # ═══════════════════════════════════════════════════════════════
 def detect_market(text):
-    """تشخیص می‌دهد سوال کاربر مربوط به کدام بازار است"""
-    if any(kw in text for kw in ["بورس", "سهام", "نماد", "شاخص", "فرابورس", "فملی", "خودرو", "وبملت", "شپنا", "شتران", "کدال", "صندوق", "ETF", "اهرم", "آپشن", "اختیار"]):
+    if any(kw in text for kw in ["بورس", "سهام", "شاخص", "فرابورس", "فملی", "اهرم", "آپشن"]):
         return "borse"
-    if any(kw in text for kw in ["کالا", "آتی", "زعفران", "مس", "نفت", "گواهی", "IME", "فولاد", "سیمان", "پتروشیمی"]):
+    if any(kw in text for kw in ["کالا", "نفت", "مس", "گواهی", "سیمان", "پتروشیمی"]):
         return "commodity"
-    if any(kw in text for kw in ["بیتکوین", "bitcoin", "اتریوم", "ethereum", "ارز دیجیتال", "crypto", "تتر", "بیت کوین", "BTC", "ETH", "رمز ارز"]):
+    if any(kw in text for kw in ["بیتکوین", "bitcoin", "اتریوم", "crypto", "BTC", "ETH", "رمز ارز"]):
         return "crypto"
-    if any(kw in text for kw in ["طلا", "سکه", "دلار", "یورو", "ارز", "مثقال", "بهار", "امامی", "پوند", "درهم"]):
+    if any(kw in text for kw in ["طلا", "سکه", "دلار", "یورو", "مثقال", "درهم"]):
         return "gold"
     return None
 
-def call_api(endpoint_path, params_dict):
-    """فراخوانی APIهای BrsApi با هدر شبیه‌سازی‌شده مرورگر"""
+def call_api(endpoint_name, extra_params=None):
+    """
+    فراخوانی APIهای BrsApi فقط با پارامترهای معتبر.
+    دیگر هیچ پارامتر اضافه‌ای (مثل type) به APIهای غیر بورس ارسال نمی‌شود.
+    """
     if not BRSAPI_KEY:
         print("DEBUG: BRSAPI_KEY is empty")
         return None
-    try:
-        url = f"{API_BASE_URL}{endpoint_path}"
-        params_dict["key"] = BRSAPI_KEY
 
-        # 🆕 اضافه کردن هدرهایی که یک مرورگر واقعی را شبیه‌سازی می‌کنند
+    # پیدا کردن اطلاعات endpoint از بین همه ماژول‌ها
+    all_endpoints = {}
+    all_endpoints.update(BOURSE_ENDPOINTS)
+    all_endpoints.update(COMMODITY_ENDPOINTS)
+    all_endpoints.update(CRYPTO_ENDPOINTS)
+    all_endpoints.update(GOLD_ENDPOINTS)
+
+    endpoint_info = all_endpoints.get(endpoint_name)
+    if not endpoint_info:
+        print(f"DEBUG: Endpoint '{endpoint_name}' not found")
+        return None
+
+    # 🆕 ساخت پارامترها فقط بر اساس params مجاز هر سرویس
+    final_params = {"key": BRSAPI_KEY}
+    valid_params = endpoint_info.get("params", [])
+
+    if extra_params:
+        for k, v in extra_params.items():
+            if k in valid_params:
+                final_params[k] = v
+            else:
+                print(f"DEBUG: Ignoring invalid param '{k}' for endpoint '{endpoint_name}'")
+
+    try:
+        url = f"{API_BASE_URL}{endpoint_info['path']}"
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
             "Accept": "application/json, text/plain, */*"
         }
 
-        print(f"DEBUG: Calling {url} with params: {params_dict}")
-        resp = requests.get(url, params=params_dict, headers=headers, timeout=15)
+        print(f"DEBUG: Calling {url} with params: {final_params}")
+        resp = requests.get(url, params=final_params, headers=headers, timeout=15)
         print(f"DEBUG: Response status: {resp.status_code}")
 
         if resp.status_code == 200:
@@ -62,62 +85,52 @@ def call_api(endpoint_path, params_dict):
             print(f"DEBUG: Response body: {resp.text[:200]}")
             return None
     except Exception as e:
-        print(f"DEBUG: API call failed for {endpoint_path}: {str(e)}")
+        print(f"DEBUG: API call failed for {endpoint_name}: {str(e)}")
         return None
 
 def get_bourse_data(text):
-    """دریافت داده‌های بورس بر اساس سوال"""
     result = []
-    
-    # شاخص
     if any(kw in text for kw in ["شاخص", "index"]):
         idx_type = "1"
         if "فرابورس" in text: idx_type = "2"
         if "منتخب" in text: idx_type = "3"
-        data = call_api("/Tsetmc/Index.php", {"type": idx_type})
+        data = call_api("index", {"type": idx_type})
         if data:
             result.append(("شاخص بورس", data, "index"))
-    
-    # نماد خاص
     symbols = re.findall(r'\b(فملی|خودرو|وبملت|شپنا|شتران|اهرم|فولاد)\b', text)
     for sym in symbols[:3]:
-        data = call_api("/Tsetmc/Symbol.php", {"l18": sym})
+        data = call_api("symbol_data", {"l18": sym})
         if data:
             result.append((f"اطلاعات نماد {sym}", data, "symbol_data"))
-    
     return result
 
 def get_commodity_data(text):
-    """دریافت داده‌های بورس کالا"""
     result = []
     if any(kw in text for kw in ["کامودیتی", "نفت", "مس", "طلا", "نقره"]):
-        data = call_api("/Market/Commodity.php", {})
+        data = call_api("commodity", {})
         if data:
             result.append(("کامودیتی‌ها", data, "commodity"))
     return result
 
 def get_crypto_data(text):
-    """دریافت داده‌های ارز دیجیتال"""
     result = []
     symbols = re.findall(r'\b(BTC|ETH|USDT|BNB|SOL|ADA|XRP)\b', text.upper())
     if not symbols:
         symbols = ["BTC"]
     for sym in symbols[:3]:
-        data = call_api("/Market/Cryptocurrency.php", {"symbol": sym})
+        data = call_api("cryptocurrency", {"symbol": sym})
         if data:
             result.append((f"قیمت {sym}", data, "cryptocurrency"))
     return result
 
 def get_gold_data(text):
-    """دریافت داده‌های طلا و ارز"""
     result = []
-    data = call_api("/Market/Gold_Currency_Pro.php", {"section": "gold,currency"})
+    data = call_api("gold_currency_pro", {"section": "gold,currency"})
     if data:
         result.append(("طلا و ارز", data, "gold_currency_pro"))
     return result
 
 def enrich_prompt(original_prompt, combined_text):
-    """دریافت داده واقعی و اضافه کردن به پرامپت"""
     market = detect_market(combined_text)
     if not market:
         return original_prompt
@@ -137,7 +150,6 @@ def enrich_prompt(original_prompt, combined_text):
     
     lines = ["\n\n📊 داده‌های واقعی بازار:\n"]
     for label, data, field_key in all_data:
-        # انتخاب نقشه فیلد مناسب
         field_map = {}
         for fm in [BOURSE_FIELDS, COMMODITY_FIELDS, CRYPTO_FIELDS, GOLD_FIELDS]:
             if field_key in fm:
@@ -163,17 +175,10 @@ final_user_prompt = enrich_prompt(prompt, combined_text)
 # ۳. مدل‌های هیئت منصفه
 # ═══════════════════════════════════════════════════════════════
 general_models = [
-    {"id": "gpt-4o-mini", "role": "دستیار عمومی، برنامه‌نویسی و تحلیل فنی"},
-    {"id": "DeepSeek-R1", "role": "تحلیل منطقی، ریاضی و امنیت سایبری"},
-    {"id": "cohere/cohere-command-r-08-2024", "role": "نویسندگی خلاق و ایده‌پردازی"},
-    {"id": "Mistral-small-2503", "role": "تحلیل مفهومی، فلسفه و دیدگاه‌های کلان"}
-]
-
-specialist_models = [
-    {"id": "openai/gpt-4.1", "system": "شما تحلیلگر مالی و متخصص برنامه‌نویسی هستید.",
-     "keywords": ["تحلیل", "قیمت", "کد", "برنامه‌نویسی", "سئو", "طراحی", "فارکس", "ارز دیجیتال", "بورس", "نمودار"]},
-    {"id": "google/gemini-2.5-pro", "system": "شما محقق خبره و تولیدکننده محتوای خلاق هستید.",
-     "keywords": ["مقاله", "تحقیق", "ایده", "خلاق", "محتوا", "شبکه اجتماعی", "بازاریابی"]}
+    {"id": "gpt-4o-mini", "role": "دستیار عمومی و تحلیل فنی"},
+    {"id": "DeepSeek-R1", "role": "تحلیل منطقی و ریاضی"},
+    {"id": "cohere/cohere-command-r-08-2024", "role": "نویسندگی خلاق"},
+    {"id": "Mistral-small-2503", "role": "تحلیل مفهومی و فلسفی"}
 ]
 
 def build_user_message(question, model_role="دستیار هوش مصنوعی"):
@@ -186,7 +191,6 @@ def build_user_message(question, model_role="دستیار هوش مصنوعی"):
 
 answers = []
 
-# مدل‌های عمومی
 for model in general_models:
     response = requests.post(
         "https://models.github.ai/inference/chat/completions",
@@ -197,19 +201,6 @@ for model in general_models:
         answers.append(f"**{model['id']}** ({model['role']}):\n{response.json()['choices'][0]['message']['content']}\n")
     else:
         answers.append(f"**{model['id']}**: خطا {response.status_code}")
-
-# مدل‌های تخصصی
-for spec in specialist_models:
-    if any(keyword in combined_text for keyword in spec["keywords"]):
-        response = requests.post(
-            "https://models.github.ai/inference/chat/completions",
-            headers={"Authorization": f"Bearer {GITHUB_TOKEN}", "Content-Type": "application/json"},
-            json={"model": spec["id"], "messages": [{"role": "system", "content": spec["system"]}, {"role": "user", "content": build_user_message(final_user_prompt, "متخصص سطح بالا")}], "max_tokens": 700}
-        )
-        if response.status_code == 200:
-            answers.append(f"**🔹 {spec['id']}** (متخصص ویژه):\n{response.json()['choices'][0]['message']['content']}\n")
-        else:
-            answers.append(f"**🔹 {spec['id']}**: خطا {response.status_code}")
 
 # ═══════════════════════════════════════════════════════════════
 # ۴. قاضی و کامنت نهایی
