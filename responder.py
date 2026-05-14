@@ -14,13 +14,13 @@ repo = os.environ["GITHUB_REPOSITORY"]
 
 prompt = f"{title}\n\n{body}"
 
-# ۲. مدل‌های هیئت منصفه - ۵ متخصص پایدار
+# ۲. ۵ مدل پایدار (نتیجه تست ۸ مدل)
 models = [
     {"id": "gpt-4o-mini", "role": "دستیار عمومی، برنامه‌نویسی و تحلیل فنی"},
     {"id": "DeepSeek-R1", "role": "تحلیل منطقی، ریاضی و امنیت سایبری"},
     {"id": "Mistral-small-2503", "role": "تحلیل مفهومی، فلسفه و دیدگاه‌های کلان"},
-    {"id": "meta/Llama-3.3-70B-Instruct", "role": "استدلال پیشرفته، تحقیق و تحلیل عمیق"},
-    {"id": "phi-4", "role": "تحلیل ساختاریافته، استدلال منطقی و حل مسئله"}
+    {"id": "meta/Llama-3.3-70B-Instruct", "role": "استدلال پیشرفته و تحقیق عمیق"},
+    {"id": "phi-4", "role": "استدلال ساختاریافته و حل مسئله"}
 ]
 
 forced_prompt = f"""⚠️ دستور: شما باید فقط به زبان فارسی پاسخ دهید. حق استفاده از هیچ زبان دیگری را ندارید.
@@ -73,7 +73,7 @@ else:
     final_answer = f"⚠️ خطا در جمع‌بندی نهایی: {judge_response.status_code}"
 
 # ۴. ارسال کامنت نهایی
-comment_body = f"## 🏛️ هیئت منصفه هوش مصنوعی\n\n### 👥 ۵ متخصص:\n- ChatGPT (GPT-4o mini)\n- DeepSeek R1\n- Mistral Small\n- Llama 3.3 70B\n- Phi-4\n\n### 📣 پاسخ‌های متخصصان:\n" + "\n---\n".join(answers) + f"\n---\n### ⚖️ پاسخ نهایی (قاضی - GPT-4o mini):\n{final_answer}"
+comment_body = f"## 🏛️ هیئت منصفه هوش مصنوعی\n\n### 👥 ۵ متخصص:\n- GPT-4o mini\n- DeepSeek R1\n- Mistral Small\n- Llama 3.3 70B\n- Phi-4\n\n### 📣 پاسخ‌های متخصصان:\n" + "\n---\n".join(answers) + f"\n---\n### ⚖️ پاسخ نهایی (قاضی - GPT-4o mini):\n{final_answer}"
 
 comment_url = f"https://api.github.com/repos/{repo}/issues/{issue_number}/comments"
 post = requests.post(
