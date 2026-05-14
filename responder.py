@@ -14,7 +14,7 @@ repo = os.environ["GITHUB_REPOSITORY"]
 
 prompt = f"{title}\n\n{body}"
 
-# ۲. ۵ مدل پایدار با تنظیمات بهینه Token و شناسه‌های اصلاح‌شده
+# ۲. ۵ مدل پایدار با تنظیمات بهینه Token
 models = [
     {
         "id": "gpt-4o-mini",
@@ -36,14 +36,14 @@ models = [
         "max_tokens": 1000
     },
     {
-        "id": "meta/llama-3.3-70b-instruct",  # 🆕 شناسه صحیح با حروف کوچک
+        "id": "meta/Llama-3.3-70B-Instruct",
         "role": "استدلال پیشرفته و تحقیق عمیق",
         "delay": 0,
         "max_tokens": 1000
     },
     {
-        "id": "phi-4-reasoning",  # 🆕 جایگزین phi-4 (مدل جدید مایکروسافت)
-        "role": "استدلال پیشرفته و حل مسئله",
+        "id": "phi-4",
+        "role": "استدلال ساختاریافته و حل مسئله",
         "delay": 0,
         "max_tokens": 1000
     }
@@ -120,7 +120,7 @@ else:
     final_answer = f"⚠️ خطا در جمع‌بندی نهایی: {judge_response.status_code}"
 
 # ۴. ارسال کامنت نهایی
-comment_body = f"## 🏛️ هیئت منصفه هوش مصنوعی\n\n### 👥 ۵ متخصص:\n- GPT-4o mini\n- DeepSeek R1 (0528)\n- Mistral Small\n- Llama 3.3 70B (Instruct)\n- Phi-4 Reasoning\n\n### 📣 پاسخ‌های متخصصان:\n" + "\n---\n".join(answers) + f"\n---\n### ⚖️ پاسخ نهایی (قاضی - GPT-4o mini):\n{final_answer}"
+comment_body = f"## 🏛️ هیئت منصفه هوش مصنوعی\n\n### 👥 ۵ متخصص:\n- GPT-4o mini\n- DeepSeek R1 (0528)\n- Mistral Small\n- Llama 3.3 70B\n- Phi-4\n\n### 📣 پاسخ‌های متخصصان:\n" + "\n---\n".join(answers) + f"\n---\n### ⚖️ پاسخ نهایی (قاضی - GPT-4o mini):\n{final_answer}"
 
 comment_url = f"https://api.github.com/repos/{repo}/issues/{issue_number}/comments"
 post = requests.post(
