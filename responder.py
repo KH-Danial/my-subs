@@ -23,7 +23,7 @@ models = [
         "max_tokens": 1000
     },
     {
-        "id": "DeepSeek-R1-0528",
+        "id": "deepseek/deepseek-r1",
         "role": "تحلیل منطقی، ریاضی و امنیت سایبری",
         "delay": 4,
         "retry_on_429": True,
