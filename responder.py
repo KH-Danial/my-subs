@@ -14,12 +14,18 @@ repo = os.environ["GITHUB_REPOSITORY"]
 
 prompt = f"{title}\n\n{body}"
 
-# ۲. مدل‌های هیئت منصفه - ۴ متخصص پایدار و تست‌شده
-models = [
-    "gpt-4o-mini",                        # دستیار عمومی (برنامه‌نویسی و تحلیل فنی)
-    "DeepSeek-R1",                        # تحلیل منطقی (ریاضی و امنیت سایبری)
-    "cohere/cohere-command-r-08-2024",    # نویسندگی خلاق (تولید محتوا و ایده‌پردازی)
-    "Mistral-small-2503"                  # تحلیل مفهومی (فلسفه و دیدگاه‌های کلان)
+# ۲. هر ۸ مدل برای تست جامع
+all_8_models = [
+    # ۴ مدل اصلی قبلی
+    {"id": "gpt-4o-mini", "role": "GPT-4o mini (OpenAI)"},
+    {"id": "DeepSeek-R1", "role": "DeepSeek R1"},
+    {"id": "cohere/cohere-command-r-08-2024", "role": "Cohere Command R"},
+    {"id": "Mistral-small-2503", "role": "Mistral Small"},
+    # ۴ مدل جدید پیشنهادی
+    {"id": "meta/Llama-3.3-70B-Instruct", "role": "Llama 3.3 70B (Meta)"},
+    {"id": "mistral-large", "role": "Mistral Large"},
+    {"id": "phi-4", "role": "Phi-4 (Microsoft)"},
+    {"id": "openai/gpt-4.1", "role": "GPT-4.1 (OpenAI)"}
 ]
 
 forced_prompt = f"""⚠️ دستور: شما باید فقط به زبان فارسی پاسخ دهید. حق استفاده از هیچ زبان دیگری را ندارید.
@@ -31,48 +37,36 @@ forced_prompt = f"""⚠️ دستور: شما باید فقط به زبان فا
 
 answers = []
 
-for model in models:
-    response = requests.post(
-        "https://models.github.ai/inference/chat/completions",
-        headers={
-            "Authorization": f"Bearer {GITHUB_TOKEN}",
-            "Content-Type": "application/json"
-        },
-        json={
-            "model": model,
-            "messages": [{"role": "user", "content": forced_prompt}],
-            "max_tokens": 600
-        }
-    )
-    if response.status_code == 200:
-        answer = response.json()["choices"][0]["message"]["content"]
-        answers.append(f"**{model}:**\n{answer}\n")
-    else:
-        answers.append(f"**{model}:** خطا {response.status_code}")
+for model in all_8_models:
+    try:
+        response = requests.post(
+            "https://models.github.ai/inference/chat/completions",
+            headers={
+                "Authorization": f"Bearer {GITHUB_TOKEN}",
+                "Content-Type": "application/json"
+            },
+            json={
+                "model": model["id"],
+                "messages": [{"role": "user", "content": forced_prompt}],
+                "max_tokens": 400
+            },
+            timeout=45
+        )
+        if response.status_code == 200:
+            answer = response.json()["choices"][0]["message"]["content"]
+            answers.append(f"## ✅ {model['id']}\n*{model['role']}*\n\n{answer}\n")
+        else:
+            answers.append(f"## ❌ {model['id']}\n*{model['role']}*\nخطا {response.status_code}: {response.text[:200]}\n")
+    except Exception as e:
+        answers.append(f"## ❌ {model['id']}\n*{model['role']}*\nاستثنا: {str(e)[:200]}\n")
 
-# ۳. مدل قاضی برای جمع‌بندی
-jury_prompt = f"سوال کاربر: {prompt}\n\nپاسخ‌های متخصصان:\n" + "\n".join(answers) + "\n\nبا توجه به پاسخ‌های بالا، یک پاسخ نهایی جامع و دقیق به فارسی بنویس. اگر پاسخ‌ها متناقض بودند، بهترین نظر را انتخاب کن."
-
-final_response = requests.post(
-    "https://models.github.ai/inference/chat/completions",
-    headers={
-        "Authorization": f"Bearer {GITHUB_TOKEN}",
-        "Content-Type": "application/json"
-    },
-    json={
-        "model": "gpt-4o-mini",
-        "messages": [{"role": "user", "content": jury_prompt}],
-        "max_tokens": 800
-    }
-)
-
-if final_response.status_code == 200:
-    final_answer = final_response.json()["choices"][0]["message"]["content"]
-else:
-    final_answer = f"⚠️ خطا در جمع‌بندی: {final_response.status_code}"
-
-# ۴. ارسال کامنت نهایی
-comment_body = f"## 🏛️ هیئت منصفه هوش مصنوعی\n\n### 👥 ۴ متخصص:\n- ChatGPT (GPT-4o mini)\n- DeepSeek R1\n- Cohere Command R\n- Mistral Small\n\n### 📣 پاسخ‌های متخصصان:\n" + "\n---\n".join(answers) + f"\n---\n### ⚖️ پاسخ نهایی (قاضی - GPT-4o mini):\n{final_answer}"
+# ۳. ارسال نتایج
+comparison_body = "## 🏛️ تست جامع ۸ مدل\n\n"
+comparison_body += f"**سوال:** {prompt}\n\n---\n\n"
+comparison_body += "\n---\n".join(answers)
+comparison_body += "\n\n---\n## 📊 خلاصه\n"
+success_count = sum(1 for a in answers if a.startswith("## ✅"))
+comparison_body += f"موفق: {success_count} از ۸"
 
 comment_url = f"https://api.github.com/repos/{repo}/issues/{issue_number}/comments"
 post = requests.post(
@@ -82,10 +76,10 @@ post = requests.post(
         "Accept": "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28"
     },
-    json={"body": comment_body}
+    json={"body": comparison_body}
 )
 
 if post.status_code == 201:
-    print("✅ کامنت هیئت منصفه ثبت شد.")
+    print("✅ نتایج تست ۸ مدل ثبت شد.")
 else:
     print(f"❌ خطا: {post.status_code} {post.text[:200]}")
