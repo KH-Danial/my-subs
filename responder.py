@@ -1,4 +1,4 @@
-import os, json, requests
+import os, json, requests, time
 
 GITHUB_TOKEN = os.environ["GH_TOKEN"]
 
@@ -14,13 +14,13 @@ repo = os.environ["GITHUB_REPOSITORY"]
 
 prompt = f"{title}\n\n{body}"
 
-# ۲. ۵ مدل پایدار (نتیجه تست ۸ مدل — فقط موفق‌ها)
+# ۲. ۵ مدل پایدار با مدیریت Rate Limit
 models = [
-    {"id": "gpt-4o-mini", "role": "دستیار عمومی، برنامه‌نویسی و تحلیل فنی"},
-    {"id": "DeepSeek-R1", "role": "تحلیل منطقی، ریاضی و امنیت سایبری"},
-    {"id": "Mistral-small-2503", "role": "تحلیل مفهومی، فلسفه و دیدگاه‌های کلان"},
-    {"id": "meta/Llama-3.3-70B-Instruct", "role": "استدلال پیشرفته و تحقیق عمیق"},
-    {"id": "phi-4", "role": "استدلال ساختاریافته و حل مسئله"}
+    {"id": "gpt-4o-mini", "role": "دستیار عمومی، برنامه‌نویسی و تحلیل فنی", "delay": 0},
+    {"id": "DeepSeek-R1", "role": "تحلیل منطقی، ریاضی و امنیت سایبری", "delay": 2, "retry_on_429": True},
+    {"id": "Mistral-small-2503", "role": "تحلیل مفهومی، فلسفه و دیدگاه‌های کلان", "delay": 0},
+    {"id": "meta/Llama-3.3-70B-Instruct", "role": "استدلال پیشرفته و تحقیق عمیق", "delay": 0},
+    {"id": "phi-4", "role": "استدلال ساختاریافته و حل مسئله", "delay": 0}
 ]
 
 forced_prompt = f"""⚠️ دستور: شما باید فقط به زبان فارسی پاسخ دهید. حق استفاده از هیچ زبان دیگری را ندارید.
@@ -33,27 +33,43 @@ forced_prompt = f"""⚠️ دستور: شما باید فقط به زبان فا
 answers = []
 
 for model in models:
-    try:
-        response = requests.post(
-            "https://models.github.ai/inference/chat/completions",
-            headers={
-                "Authorization": f"Bearer {GITHUB_TOKEN}",
-                "Content-Type": "application/json"
-            },
-            json={
-                "model": model["id"],
-                "messages": [{"role": "user", "content": forced_prompt}],
-                "max_tokens": 600
-            },
-            timeout=45
-        )
-        if response.status_code == 200:
-            answer = response.json()["choices"][0]["message"]["content"]
-            answers.append(f"**✅ {model['id']}** ({model['role']}):\n{answer}\n")
-        else:
-            answers.append(f"**❌ {model['id']}** (خطا {response.status_code})\n")
-    except Exception as e:
-        answers.append(f"**❌ {model['id']}** (استثنا: {str(e)[:100]})\n")
+    # اعمال تأخیر برای مدل‌های حساس
+    if model.get("delay", 0) > 0:
+        time.sleep(model["delay"])
+    
+    attempt = 0
+    max_attempts = 2 if model.get("retry_on_429") else 1
+    success = False
+    
+    while attempt < max_attempts and not success:
+        attempt += 1
+        try:
+            response = requests.post(
+                "https://models.github.ai/inference/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {GITHUB_TOKEN}",
+                    "Content-Type": "application/json"
+                },
+                json={
+                    "model": model["id"],
+                    "messages": [{"role": "user", "content": forced_prompt}],
+                    "max_tokens": 600
+                },
+                timeout=45
+            )
+            if response.status_code == 200:
+                answer = response.json()["choices"][0]["message"]["content"]
+                answers.append(f"**✅ {model['id']}** ({model['role']}):\n{answer}\n")
+                success = True
+            elif response.status_code == 429 and attempt < max_attempts:
+                # خطای Rate Limit: ۴ ثانیه صبر کن و دوباره تلاش کن
+                time.sleep(4)
+            else:
+                answers.append(f"**❌ {model['id']}** (خطا {response.status_code})\n")
+                success = True  # از حلقه خارج شو (خطای دیگری است)
+        except Exception as e:
+            answers.append(f"**❌ {model['id']}** (استثنا: {str(e)[:100]})\n")
+            success = True
 
 # ۳. مدل قاضی برای جمع‌بندی
 judge_prompt = f"سوال کاربر: {prompt}\n\nپاسخ‌های متخصصان:\n" + "\n".join(answers) + "\n\nبا توجه به پاسخ‌های بالا، یک پاسخ نهایی جامع و دقیق به فارسی بنویس. اگر پاسخ‌ها متناقض بودند، بهترین نظر را انتخاب کن."
