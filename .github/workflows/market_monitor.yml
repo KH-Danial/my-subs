@@ -10,45 +10,35 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    timeout-minutes: 10
-
+    
     steps:
       - name: 📥 دریافت کدها
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
+      
       - name: 🐍 نصب پایتون
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
+      
       - name: 📦 نصب نیازمندی‌ها
         run: |
           python -m pip install --upgrade pip
           pip install requests
-
-      - name: 🔍 اجرای تحلیل
-        id: analysis
+      
+      - name: 🔍 اجرای اسکریپت تحلیل
         run: python fetch_and_analyze.py
-
-      - name: 💾 ذخیره تغییرات
-        if: always()
+        continue-on-error: true  # ادامه اجرا حتی در صورت خطا
+      
+      - name: 💾 ثبت تغییرات در مخزن
         run: |
-          git config user.email "action@github.com"
-          git config user.name "GitHub Action"
-          
-          # نمایش وضعیت فایل‌ها برای دیباگ
-          echo "📂 فایل‌های موجود:"
-          ls -la *.md *.json 2>/dev/null || echo "هنوز فایلی ایجاد نشده"
-          
-          git add README.md market_report.json price_history.json 2>/dev/null || true
-          
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add price_history.json README.md market_report.json 2>/dev/null || true
           if git diff --staged --quiet; then
-            echo "📝 هیچ تغییری برای commit وجود ندارد"
+            echo "📝 تغییری برای commit وجود ندارد"
           else
-            echo "📝 تغییرات شناسایی شده:"
-            git diff --staged --stat
             git commit -m "به‌روزرسانی خودکار گزارش بازار - $(date +'%Y-%m-%d %H:%M')"
             git push
             echo "✅ تغییرات با موفقیت push شد"
