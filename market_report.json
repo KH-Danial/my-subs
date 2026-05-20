@@ -1,0 +1,4983 @@
+{
+  "timestamp": "2026-05-20T21:49:01Z",
+  "top_gainers": [
+    {
+      "name": "BTC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    {
+      "name": "ETH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    {
+      "name": "USDT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    {
+      "name": "DOGE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    {
+      "name": "SHIB",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    }
+  ],
+  "top_losers": [
+    {
+      "name": "ASTER",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    {
+      "name": "AIOZ",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    {
+      "name": "ISK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    {
+      "name": "MANTA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    {
+      "name": "SWFTC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    }
+  ],
+  "all_changes": {
+    "BTC": {
+      "name": "BTC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ETH": {
+      "name": "ETH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "USDT": {
+      "name": "USDT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DOGE": {
+      "name": "DOGE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SHIB": {
+      "name": "SHIB",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "USDC": {
+      "name": "USDC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SOL": {
+      "name": "SOL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CHZ": {
+      "name": "CHZ",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BNB": {
+      "name": "BNB",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ETC": {
+      "name": "ETC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ADA": {
+      "name": "ADA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GMT": {
+      "name": "GMT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "JASMY": {
+      "name": "JASMY",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XRP": {
+      "name": "XRP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FIL": {
+      "name": "FIL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NEAR": {
+      "name": "NEAR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AVAX": {
+      "name": "AVAX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GALA": {
+      "name": "GALA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DOT": {
+      "name": "DOT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SAND": {
+      "name": "SAND",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "APE": {
+      "name": "APE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "UNFI": {
+      "name": "UNFI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ANKR": {
+      "name": "ANKR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LINK": {
+      "name": "LINK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RUNE": {
+      "name": "RUNE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TRX": {
+      "name": "TRX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SPELL": {
+      "name": "SPELL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "OGN": {
+      "name": "OGN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "UNI": {
+      "name": "UNI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LTC": {
+      "name": "LTC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ENS": {
+      "name": "ENS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ATOM": {
+      "name": "ATOM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WAVES": {
+      "name": "WAVES",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AAVE": {
+      "name": "AAVE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AXS": {
+      "name": "AXS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "INJ": {
+      "name": "INJ",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FLOW": {
+      "name": "FLOW",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XMR": {
+      "name": "XMR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FET": {
+      "name": "FET",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ROSE": {
+      "name": "ROSE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MANA": {
+      "name": "MANA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DYDX": {
+      "name": "DYDX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TUSD": {
+      "name": "TUSD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PEOPLE": {
+      "name": "PEOPLE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ONE": {
+      "name": "ONE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CVC": {
+      "name": "CVC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GRT": {
+      "name": "GRT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "THETA": {
+      "name": "THETA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ZIL": {
+      "name": "ZIL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CELR": {
+      "name": "CELR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CRV": {
+      "name": "CRV",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "EGLD": {
+      "name": "EGLD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VET": {
+      "name": "VET",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LRC": {
+      "name": "LRC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TRB": {
+      "name": "TRB",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ZEC": {
+      "name": "ZEC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "YFII": {
+      "name": "YFII",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ALGO": {
+      "name": "ALGO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SNX": {
+      "name": "SNX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ICP": {
+      "name": "ICP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "UMA": {
+      "name": "UMA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RLC": {
+      "name": "RLC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HOT": {
+      "name": "HOT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ELF": {
+      "name": "ELF",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BCH": {
+      "name": "BCH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RSR": {
+      "name": "RSR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "IOTX": {
+      "name": "IOTX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ALICE": {
+      "name": "ALICE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FTT": {
+      "name": "FTT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "COMP": {
+      "name": "COMP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "KAVA": {
+      "name": "KAVA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "YFI": {
+      "name": "YFI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XTZ": {
+      "name": "XTZ",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WOO": {
+      "name": "WOO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SANTOS": {
+      "name": "SANTOS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LUNA": {
+      "name": "LUNA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XLM": {
+      "name": "XLM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SUSHI": {
+      "name": "SUSHI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TORN": {
+      "name": "TORN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "QNT": {
+      "name": "QNT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "IDEX": {
+      "name": "IDEX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WIN": {
+      "name": "WIN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "KSM": {
+      "name": "KSM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BEL": {
+      "name": "BEL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ENJ": {
+      "name": "ENJ",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "KDA": {
+      "name": "KDA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PORTO": {
+      "name": "PORTO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "IMX": {
+      "name": "IMX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HBAR": {
+      "name": "HBAR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CHR": {
+      "name": "CHR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FIDA": {
+      "name": "FIDA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SXP": {
+      "name": "SXP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FLUX": {
+      "name": "FLUX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GLMR": {
+      "name": "GLMR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CAKE": {
+      "name": "CAKE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AR": {
+      "name": "AR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RVN": {
+      "name": "RVN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "STORJ": {
+      "name": "STORJ",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DASH": {
+      "name": "DASH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MINA": {
+      "name": "MINA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MASK": {
+      "name": "MASK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "API3": {
+      "name": "API3",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CELO": {
+      "name": "CELO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BAT": {
+      "name": "BAT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TFUEL": {
+      "name": "TFUEL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LPT": {
+      "name": "LPT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NEO": {
+      "name": "NEO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TWT": {
+      "name": "TWT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "C98": {
+      "name": "C98",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "KNC": {
+      "name": "KNC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AUCTION": {
+      "name": "AUCTION",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TLM": {
+      "name": "TLM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "JUV": {
+      "name": "JUV",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ACA": {
+      "name": "ACA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DUSK": {
+      "name": "DUSK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PSG": {
+      "name": "PSG",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "IOTA": {
+      "name": "IOTA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PYR": {
+      "name": "PYR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HNT": {
+      "name": "HNT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "REN": {
+      "name": "REN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "1INCH": {
+      "name": "1INCH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "JST": {
+      "name": "JST",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DENT": {
+      "name": "DENT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CTK": {
+      "name": "CTK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BEAM": {
+      "name": "BEAM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "OG": {
+      "name": "OG",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BAND": {
+      "name": "BAND",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SKL": {
+      "name": "SKL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "POND": {
+      "name": "POND",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WAXP": {
+      "name": "WAXP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ALPINE": {
+      "name": "ALPINE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BADGER": {
+      "name": "BADGER",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LAZIO": {
+      "name": "LAZIO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PERP": {
+      "name": "PERP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CTSI": {
+      "name": "CTSI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XVS": {
+      "name": "XVS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AUDIO": {
+      "name": "AUDIO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MOVR": {
+      "name": "MOVR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ZEN": {
+      "name": "ZEN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SUPER": {
+      "name": "SUPER",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DGB": {
+      "name": "DGB",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SUN": {
+      "name": "SUN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "IOST": {
+      "name": "IOST",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RAY": {
+      "name": "RAY",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PAXG": {
+      "name": "PAXG",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FIO": {
+      "name": "FIO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XEC": {
+      "name": "XEC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ATA": {
+      "name": "ATA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "YGG": {
+      "name": "YGG",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "COTI": {
+      "name": "COTI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MBOX": {
+      "name": "MBOX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BAL": {
+      "name": "BAL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TRU": {
+      "name": "TRU",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DEGO": {
+      "name": "DEGO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ILV": {
+      "name": "ILV",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PUNDIX": {
+      "name": "PUNDIX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SFP": {
+      "name": "SFP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SCRT": {
+      "name": "SCRT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "QTUM": {
+      "name": "QTUM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "JOE": {
+      "name": "JOE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DODO": {
+      "name": "DODO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ICX": {
+      "name": "ICX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FORTH": {
+      "name": "FORTH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RENDER": {
+      "name": "RENDER",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ASTR": {
+      "name": "ASTR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MBL": {
+      "name": "MBL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NKN": {
+      "name": "NKN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AGLD": {
+      "name": "AGLD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BLZ": {
+      "name": "BLZ",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ZRX": {
+      "name": "ZRX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ARPA": {
+      "name": "ARPA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BNT": {
+      "name": "BNT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XVG": {
+      "name": "XVG",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "STX": {
+      "name": "STX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FIS": {
+      "name": "FIS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BICO": {
+      "name": "BICO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ATM": {
+      "name": "ATM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CLV": {
+      "name": "CLV",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NEXO": {
+      "name": "NEXO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ACH": {
+      "name": "ACH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SYS": {
+      "name": "SYS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VOXEL": {
+      "name": "VOXEL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XEM": {
+      "name": "XEM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RARE": {
+      "name": "RARE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ASR": {
+      "name": "ASR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CKB": {
+      "name": "CKB",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "REQ": {
+      "name": "REQ",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WRX": {
+      "name": "WRX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ADX": {
+      "name": "ADX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SC": {
+      "name": "SC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DCR": {
+      "name": "DCR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CFX": {
+      "name": "CFX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VTHO": {
+      "name": "VTHO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "STRAX": {
+      "name": "STRAX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "COS": {
+      "name": "COS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MDX": {
+      "name": "MDX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HIVE": {
+      "name": "HIVE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "REP": {
+      "name": "REP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "QUICK": {
+      "name": "QUICK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AVA": {
+      "name": "AVA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BTG": {
+      "name": "BTG",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ALCX": {
+      "name": "ALCX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NMR": {
+      "name": "NMR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BTS": {
+      "name": "BTS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DIA": {
+      "name": "DIA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MULTI": {
+      "name": "MULTI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "T": {
+      "name": "T",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "POWR": {
+      "name": "POWR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DEXE": {
+      "name": "DEXE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TKO": {
+      "name": "TKO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "OXT": {
+      "name": "OXT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MOB": {
+      "name": "MOB",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "POLS": {
+      "name": "POLS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MDT": {
+      "name": "MDT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LSK": {
+      "name": "LSK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WAN": {
+      "name": "WAN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MLN": {
+      "name": "MLN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "IRIS": {
+      "name": "IRIS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ARDR": {
+      "name": "ARDR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GNO": {
+      "name": "GNO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GHST": {
+      "name": "GHST",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FUN": {
+      "name": "FUN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "KZEN": {
+      "name": "KZEN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TLOS": {
+      "name": "TLOS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SIGN": {
+      "name": "SIGN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DEEP": {
+      "name": "DEEP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DEGEN": {
+      "name": "DEGEN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WPAY": {
+      "name": "WPAY",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ORION": {
+      "name": "ORION",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SPELLFIRE": {
+      "name": "SPELLFIRE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "KLV": {
+      "name": "KLV",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PINE": {
+      "name": "PINE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CITY": {
+      "name": "CITY",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MILO": {
+      "name": "MILO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RATING": {
+      "name": "RATING",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "KCS": {
+      "name": "KCS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WALLET": {
+      "name": "WALLET",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SWASH": {
+      "name": "SWASH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NUM": {
+      "name": "NUM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VOLT": {
+      "name": "VOLT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MOOV": {
+      "name": "MOOV",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NBOT": {
+      "name": "NBOT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "QKC": {
+      "name": "QKC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CWAR": {
+      "name": "CWAR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RATS": {
+      "name": "RATS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "POR": {
+      "name": "POR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HTM": {
+      "name": "HTM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "OBI": {
+      "name": "OBI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BRN": {
+      "name": "BRN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ABT": {
+      "name": "ABT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BIFIF": {
+      "name": "BIFIF",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ATEAM": {
+      "name": "ATEAM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AIA": {
+      "name": "AIA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CHEEL": {
+      "name": "CHEEL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LUNC": {
+      "name": "LUNC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BEER": {
+      "name": "BEER",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AIN": {
+      "name": "AIN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WIF": {
+      "name": "WIF",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CSPR": {
+      "name": "CSPR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ESE": {
+      "name": "ESE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NEIROCTO": {
+      "name": "NEIROCTO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WAGMIGAMES": {
+      "name": "WAGMIGAMES",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GMX": {
+      "name": "GMX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DAO": {
+      "name": "DAO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WAG": {
+      "name": "WAG",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AURORA": {
+      "name": "AURORA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VIC": {
+      "name": "VIC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ENA": {
+      "name": "ENA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MAD": {
+      "name": "MAD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ACN": {
+      "name": "ACN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PEPECOIN": {
+      "name": "PEPECOIN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AIR": {
+      "name": "AIR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ZOON": {
+      "name": "ZOON",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WEETH": {
+      "name": "WEETH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CEUR": {
+      "name": "CEUR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "APYS": {
+      "name": "APYS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WZRD": {
+      "name": "WZRD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GALFAN": {
+      "name": "GALFAN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AM": {
+      "name": "AM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "IAG": {
+      "name": "IAG",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "1CAT": {
+      "name": "1CAT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XZK": {
+      "name": "XZK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GETA": {
+      "name": "GETA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ADP": {
+      "name": "ADP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VENOM": {
+      "name": "VENOM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VSYS": {
+      "name": "VSYS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BMON": {
+      "name": "BMON",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VXT": {
+      "name": "VXT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MDAO": {
+      "name": "MDAO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CREDI": {
+      "name": "CREDI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CAD": {
+      "name": "CAD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DIO": {
+      "name": "DIO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "UXLINK": {
+      "name": "UXLINK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PI": {
+      "name": "PI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "METO": {
+      "name": "METO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "IKA": {
+      "name": "IKA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WAXL": {
+      "name": "WAXL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WSI": {
+      "name": "WSI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SEI": {
+      "name": "SEI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VRA": {
+      "name": "VRA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SNTR": {
+      "name": "SNTR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ACX": {
+      "name": "ACX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PBTC35A": {
+      "name": "PBTC35A",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RJV": {
+      "name": "RJV",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "REI": {
+      "name": "REI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "UDS": {
+      "name": "UDS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "POLC": {
+      "name": "POLC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DADDY": {
+      "name": "DADDY",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AERO": {
+      "name": "AERO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BRETT": {
+      "name": "BRETT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TOP": {
+      "name": "TOP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "EVER": {
+      "name": "EVER",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HOPR": {
+      "name": "HOPR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DMTR": {
+      "name": "DMTR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DUREV": {
+      "name": "DUREV",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PACK": {
+      "name": "PACK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FAR": {
+      "name": "FAR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SAO": {
+      "name": "SAO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CTX": {
+      "name": "CTX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DIMO": {
+      "name": "DIMO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HOLO": {
+      "name": "HOLO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NBT": {
+      "name": "NBT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LRDS": {
+      "name": "LRDS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "P00LS": {
+      "name": "P00LS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "COQ": {
+      "name": "COQ",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MANEKI": {
+      "name": "MANEKI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CHEX": {
+      "name": "CHEX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GRASS": {
+      "name": "GRASS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GMRX": {
+      "name": "GMRX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ZLW": {
+      "name": "ZLW",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ROA": {
+      "name": "ROA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PHA": {
+      "name": "PHA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CATCOIN": {
+      "name": "CATCOIN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XNA": {
+      "name": "XNA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BONK": {
+      "name": "BONK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XELS": {
+      "name": "XELS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "INTER": {
+      "name": "INTER",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FREE": {
+      "name": "FREE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SWCH": {
+      "name": "SWCH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SAUBER": {
+      "name": "SAUBER",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RAIN": {
+      "name": "RAIN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CARAT": {
+      "name": "CARAT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CERE": {
+      "name": "CERE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NODE": {
+      "name": "NODE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SYN": {
+      "name": "SYN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ID": {
+      "name": "ID",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ZKJ": {
+      "name": "ZKJ",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "UNCX": {
+      "name": "UNCX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TRC": {
+      "name": "TRC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FIGHT": {
+      "name": "FIGHT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TRR": {
+      "name": "TRR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AE": {
+      "name": "AE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MCRT": {
+      "name": "MCRT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ORBR": {
+      "name": "ORBR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SOON": {
+      "name": "SOON",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LOBO": {
+      "name": "LOBO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TRCL": {
+      "name": "TRCL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PORT3": {
+      "name": "PORT3",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SQR": {
+      "name": "SQR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SWAP": {
+      "name": "SWAP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ELA": {
+      "name": "ELA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MATCH": {
+      "name": "MATCH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XPR": {
+      "name": "XPR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DHV": {
+      "name": "DHV",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VANRY": {
+      "name": "VANRY",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DMC": {
+      "name": "DMC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "INFRA": {
+      "name": "INFRA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FF": {
+      "name": "FF",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GMMT": {
+      "name": "GMMT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GT": {
+      "name": "GT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RTF": {
+      "name": "RTF",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DEP": {
+      "name": "DEP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VINU": {
+      "name": "VINU",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TRADE": {
+      "name": "TRADE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "K21": {
+      "name": "K21",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FLY": {
+      "name": "FLY",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ARTFI": {
+      "name": "ARTFI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BMEX": {
+      "name": "BMEX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FDUSD": {
+      "name": "FDUSD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SEND": {
+      "name": "SEND",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "EDEN": {
+      "name": "EDEN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NSDX": {
+      "name": "NSDX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AIXBT": {
+      "name": "AIXBT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XCH": {
+      "name": "XCH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LOGT": {
+      "name": "LOGT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "THE": {
+      "name": "THE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ROOBEE": {
+      "name": "ROOBEE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GZONE": {
+      "name": "GZONE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CRCLX": {
+      "name": "CRCLX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DOGS": {
+      "name": "DOGS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XGN": {
+      "name": "XGN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BAS": {
+      "name": "BAS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "POPCAT": {
+      "name": "POPCAT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "STRK": {
+      "name": "STRK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WKC": {
+      "name": "WKC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PYTH": {
+      "name": "PYTH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MOOO": {
+      "name": "MOOO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AFC": {
+      "name": "AFC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VGX": {
+      "name": "VGX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RWA": {
+      "name": "RWA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SFI": {
+      "name": "SFI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "QORPO": {
+      "name": "QORPO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RFD": {
+      "name": "RFD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MMPRO": {
+      "name": "MMPRO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ALD": {
+      "name": "ALD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CTP": {
+      "name": "CTP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PVU": {
+      "name": "PVU",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MEE": {
+      "name": "MEE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "EDU": {
+      "name": "EDU",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ARG": {
+      "name": "ARG",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SHIB2": {
+      "name": "SHIB2",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BAC": {
+      "name": "BAC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NAVX": {
+      "name": "NAVX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SD": {
+      "name": "SD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "EVO": {
+      "name": "EVO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ARKM": {
+      "name": "ARKM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ZEUM": {
+      "name": "ZEUM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SOVRN": {
+      "name": "SOVRN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MYRO": {
+      "name": "MYRO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HT": {
+      "name": "HT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BANK": {
+      "name": "BANK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RFUEL": {
+      "name": "RFUEL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DXCT": {
+      "name": "DXCT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TRVL": {
+      "name": "TRVL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SHX": {
+      "name": "SHX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NUX": {
+      "name": "NUX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SLVON": {
+      "name": "SLVON",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CVAULTCORE": {
+      "name": "CVAULTCORE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SPO": {
+      "name": "SPO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CHATAI": {
+      "name": "CHATAI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BICITY": {
+      "name": "BICITY",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PENGU": {
+      "name": "PENGU",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PHB": {
+      "name": "PHB",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LM": {
+      "name": "LM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "KRRX": {
+      "name": "KRRX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ATOZ": {
+      "name": "ATOZ",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SMART": {
+      "name": "SMART",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GCOIN": {
+      "name": "GCOIN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WEMIX": {
+      "name": "WEMIX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "OXY": {
+      "name": "OXY",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "COOKIE": {
+      "name": "COOKIE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AOG": {
+      "name": "AOG",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LIKE": {
+      "name": "LIKE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "UNIBOT": {
+      "name": "UNIBOT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SQD": {
+      "name": "SQD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HMSTR": {
+      "name": "HMSTR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ANDYETH": {
+      "name": "ANDYETH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ACT": {
+      "name": "ACT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TET": {
+      "name": "TET",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SHDW": {
+      "name": "SHDW",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FTRB": {
+      "name": "FTRB",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GITCOIN": {
+      "name": "GITCOIN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NCT": {
+      "name": "NCT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ACM": {
+      "name": "ACM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DNX": {
+      "name": "DNX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BNC": {
+      "name": "BNC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ZRO": {
+      "name": "ZRO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ALI": {
+      "name": "ALI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "REIGN": {
+      "name": "REIGN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SHFT": {
+      "name": "SHFT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "APU": {
+      "name": "APU",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NOT": {
+      "name": "NOT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NPC": {
+      "name": "NPC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BTRST": {
+      "name": "BTRST",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BABYDOGE": {
+      "name": "BABYDOGE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WAR": {
+      "name": "WAR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BERA": {
+      "name": "BERA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LWA": {
+      "name": "LWA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GOG": {
+      "name": "GOG",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FIRE": {
+      "name": "FIRE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "KUB": {
+      "name": "KUB",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MSOL": {
+      "name": "MSOL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PACE": {
+      "name": "PACE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MDF": {
+      "name": "MDF",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LOA": {
+      "name": "LOA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TNSR": {
+      "name": "TNSR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BUBBLE": {
+      "name": "BUBBLE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RAI": {
+      "name": "RAI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MGKL": {
+      "name": "MGKL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MOONEY": {
+      "name": "MOONEY",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RING": {
+      "name": "RING",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MATH": {
+      "name": "MATH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ORCA": {
+      "name": "ORCA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SPFC": {
+      "name": "SPFC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ZERO": {
+      "name": "ZERO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TONC": {
+      "name": "TONC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MOVE": {
+      "name": "MOVE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MTV": {
+      "name": "MTV",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MX": {
+      "name": "MX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SHIRO": {
+      "name": "SHIRO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AGI": {
+      "name": "AGI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PLANET": {
+      "name": "PLANET",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XNL": {
+      "name": "XNL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NANO": {
+      "name": "NANO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CGPT": {
+      "name": "CGPT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WEST": {
+      "name": "WEST",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XYM": {
+      "name": "XYM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WXT": {
+      "name": "WXT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MV": {
+      "name": "MV",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BXC": {
+      "name": "BXC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CPOOL": {
+      "name": "CPOOL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MOG": {
+      "name": "MOG",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "IO": {
+      "name": "IO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VMT": {
+      "name": "VMT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "UDAO": {
+      "name": "UDAO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WOJAK": {
+      "name": "WOJAK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SUPE": {
+      "name": "SUPE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SBR": {
+      "name": "SBR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BSCS": {
+      "name": "BSCS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BENJI": {
+      "name": "BENJI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "METFI": {
+      "name": "METFI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DRIFT": {
+      "name": "DRIFT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ORBS": {
+      "name": "ORBS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LEO": {
+      "name": "LEO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ML": {
+      "name": "ML",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ZBCN": {
+      "name": "ZBCN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "INSP": {
+      "name": "INSP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ACE": {
+      "name": "ACE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PLSPAD": {
+      "name": "PLSPAD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RED": {
+      "name": "RED",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "OWN": {
+      "name": "OWN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TST": {
+      "name": "TST",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MNDE": {
+      "name": "MNDE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GROK": {
+      "name": "GROK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NEON": {
+      "name": "NEON",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BUSY": {
+      "name": "BUSY",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SAGA": {
+      "name": "SAGA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MNT": {
+      "name": "MNT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PUSH": {
+      "name": "PUSH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PZP": {
+      "name": "PZP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WBT": {
+      "name": "WBT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "IZI": {
+      "name": "IZI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CAGA": {
+      "name": "CAGA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WX": {
+      "name": "WX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LOE": {
+      "name": "LOE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TDROP": {
+      "name": "TDROP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SPA": {
+      "name": "SPA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MDUS": {
+      "name": "MDUS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PROPC": {
+      "name": "PROPC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CHO": {
+      "name": "CHO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HOLD": {
+      "name": "HOLD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PEPE": {
+      "name": "PEPE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CCD": {
+      "name": "CCD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XFI": {
+      "name": "XFI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FLT": {
+      "name": "FLT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DON": {
+      "name": "DON",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SAFE": {
+      "name": "SAFE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ASM": {
+      "name": "ASM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TAIKO": {
+      "name": "TAIKO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SBD": {
+      "name": "SBD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ALPA": {
+      "name": "ALPA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MEME": {
+      "name": "MEME",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SNPT": {
+      "name": "SNPT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AVT": {
+      "name": "AVT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "POLK": {
+      "name": "POLK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PRO": {
+      "name": "PRO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TURT": {
+      "name": "TURT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BLUR": {
+      "name": "BLUR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HELLO": {
+      "name": "HELLO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "METAX": {
+      "name": "METAX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LKI": {
+      "name": "LKI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "O4DX": {
+      "name": "O4DX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HTX": {
+      "name": "HTX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FIWA": {
+      "name": "FIWA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GMM": {
+      "name": "GMM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ROUTE": {
+      "name": "ROUTE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BRISE": {
+      "name": "BRISE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "KTON": {
+      "name": "KTON",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PAAL": {
+      "name": "PAAL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LNDX": {
+      "name": "LNDX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VR": {
+      "name": "VR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NETT": {
+      "name": "NETT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GEOD": {
+      "name": "GEOD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GLM": {
+      "name": "GLM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SPEC": {
+      "name": "SPEC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "KCT": {
+      "name": "KCT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LION": {
+      "name": "LION",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BDT": {
+      "name": "BDT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XEN": {
+      "name": "XEN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "KARRAT": {
+      "name": "KARRAT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "OCTA": {
+      "name": "OCTA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GF": {
+      "name": "GF",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BTT": {
+      "name": "BTT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ASK": {
+      "name": "ASK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "IRON": {
+      "name": "IRON",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WNCG": {
+      "name": "WNCG",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XAUT": {
+      "name": "XAUT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GXE": {
+      "name": "GXE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MCTP": {
+      "name": "MCTP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SKY": {
+      "name": "SKY",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GFI": {
+      "name": "GFI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BEAMX": {
+      "name": "BEAMX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CRVUSD": {
+      "name": "CRVUSD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SLIM": {
+      "name": "SLIM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ULTIMA": {
+      "name": "ULTIMA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "EL": {
+      "name": "EL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TRUMP": {
+      "name": "TRUMP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "KAS": {
+      "name": "KAS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "METAN": {
+      "name": "METAN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MFER": {
+      "name": "MFER",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BST": {
+      "name": "BST",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HOME": {
+      "name": "HOME",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ARTY": {
+      "name": "ARTY",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GOOGLX": {
+      "name": "GOOGLX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PIXFI": {
+      "name": "PIXFI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PYM": {
+      "name": "PYM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MCDX": {
+      "name": "MCDX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TON": {
+      "name": "TON",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BSV": {
+      "name": "BSV",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VATRENI": {
+      "name": "VATRENI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DSYNC": {
+      "name": "DSYNC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BROCCOLI": {
+      "name": "BROCCOLI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VINE": {
+      "name": "VINE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TT": {
+      "name": "TT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WAM": {
+      "name": "WAM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PYUSD": {
+      "name": "PYUSD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SAMO": {
+      "name": "SAMO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GMEE": {
+      "name": "GMEE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ZSC": {
+      "name": "ZSC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ZETA": {
+      "name": "ZETA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WELL": {
+      "name": "WELL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MAV": {
+      "name": "MAV",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SOPH": {
+      "name": "SOPH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SHPING": {
+      "name": "SHPING",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LEGION": {
+      "name": "LEGION",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MAX": {
+      "name": "MAX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "POL": {
+      "name": "POL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LOFI": {
+      "name": "LOFI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ZENT": {
+      "name": "ZENT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HOODX": {
+      "name": "HOODX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HOOK": {
+      "name": "HOOK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ALU": {
+      "name": "ALU",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TIA": {
+      "name": "TIA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FORT": {
+      "name": "FORT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SAROS": {
+      "name": "SAROS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "OSHI": {
+      "name": "OSHI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ADAPAD": {
+      "name": "ADAPAD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RBC": {
+      "name": "RBC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SIS": {
+      "name": "SIS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "REZ": {
+      "name": "REZ",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TAO": {
+      "name": "TAO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "COINX": {
+      "name": "COINX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SMX": {
+      "name": "SMX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "A8": {
+      "name": "A8",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HNB": {
+      "name": "HNB",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AVL": {
+      "name": "AVL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PENDLE": {
+      "name": "PENDLE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FYN": {
+      "name": "FYN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ISP": {
+      "name": "ISP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DPR": {
+      "name": "DPR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MVL": {
+      "name": "MVL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FAI": {
+      "name": "FAI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SENSO": {
+      "name": "SENSO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NIM": {
+      "name": "NIM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CXT": {
+      "name": "CXT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HLN": {
+      "name": "HLN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CAT": {
+      "name": "CAT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PIXEL": {
+      "name": "PIXEL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LADYS": {
+      "name": "LADYS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RSS3": {
+      "name": "RSS3",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ARB": {
+      "name": "ARB",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CORN": {
+      "name": "CORN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LF": {
+      "name": "LF",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ALT": {
+      "name": "ALT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ZIG": {
+      "name": "ZIG",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ARC": {
+      "name": "ARC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VELO": {
+      "name": "VELO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "POOLX": {
+      "name": "POOLX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SUKU": {
+      "name": "SUKU",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MAGIC": {
+      "name": "MAGIC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NAFT": {
+      "name": "NAFT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DUCK": {
+      "name": "DUCK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HEART": {
+      "name": "HEART",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "Y8U": {
+      "name": "Y8U",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GOMINING": {
+      "name": "GOMINING",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PALM": {
+      "name": "PALM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "U": {
+      "name": "U",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BRKL": {
+      "name": "BRKL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WOLF": {
+      "name": "WOLF",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ZEUS": {
+      "name": "ZEUS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PRIMAL": {
+      "name": "PRIMAL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MON": {
+      "name": "MON",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "JTO": {
+      "name": "JTO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "KMNO": {
+      "name": "KMNO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NFP": {
+      "name": "NFP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "EUL": {
+      "name": "EUL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LQTY": {
+      "name": "LQTY",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BONE": {
+      "name": "BONE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TRAC": {
+      "name": "TRAC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CORE": {
+      "name": "CORE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ATLAS": {
+      "name": "ATLAS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CREO": {
+      "name": "CREO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CRU": {
+      "name": "CRU",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XPRT": {
+      "name": "XPRT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ULTI": {
+      "name": "ULTI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LON": {
+      "name": "LON",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GOATS": {
+      "name": "GOATS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XR": {
+      "name": "XR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VIRTUAL": {
+      "name": "VIRTUAL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CRO": {
+      "name": "CRO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XTAG": {
+      "name": "XTAG",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TSLAX": {
+      "name": "TSLAX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MPLX": {
+      "name": "MPLX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RACA": {
+      "name": "RACA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TURBO": {
+      "name": "TURBO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AAPLX": {
+      "name": "AAPLX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LIT": {
+      "name": "LIT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SAI": {
+      "name": "SAI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ACS": {
+      "name": "ACS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CATI": {
+      "name": "CATI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XCV": {
+      "name": "XCV",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "IQ": {
+      "name": "IQ",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BUY": {
+      "name": "BUY",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "IN": {
+      "name": "IN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LINEA": {
+      "name": "LINEA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MENGO": {
+      "name": "MENGO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GAFI": {
+      "name": "GAFI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "OKB": {
+      "name": "OKB",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VSX": {
+      "name": "VSX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CRF": {
+      "name": "CRF",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AMZNX": {
+      "name": "AMZNX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GTAI": {
+      "name": "GTAI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BFC": {
+      "name": "BFC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MBX": {
+      "name": "MBX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "OPN": {
+      "name": "OPN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XDB": {
+      "name": "XDB",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GUI": {
+      "name": "GUI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FLIP": {
+      "name": "FLIP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "OBT": {
+      "name": "OBT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SMURFCAT": {
+      "name": "SMURFCAT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BOSON": {
+      "name": "BOSON",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TOWN": {
+      "name": "TOWN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RADAR": {
+      "name": "RADAR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MOCA": {
+      "name": "MOCA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PANDO": {
+      "name": "PANDO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CLORE": {
+      "name": "CLORE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FOREX": {
+      "name": "FOREX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NIZA": {
+      "name": "NIZA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WSB": {
+      "name": "WSB",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WRT": {
+      "name": "WRT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "APT": {
+      "name": "APT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ROOT": {
+      "name": "ROOT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "D2T": {
+      "name": "D2T",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PEIPEI": {
+      "name": "PEIPEI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GODS": {
+      "name": "GODS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BANANA": {
+      "name": "BANANA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MUSE": {
+      "name": "MUSE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "EMT": {
+      "name": "EMT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MAVIA": {
+      "name": "MAVIA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MELANIA": {
+      "name": "MELANIA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SBTC": {
+      "name": "SBTC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VDR": {
+      "name": "VDR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "KTN": {
+      "name": "KTN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "COOK": {
+      "name": "COOK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GOZ": {
+      "name": "GOZ",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MET": {
+      "name": "MET",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VVS": {
+      "name": "VVS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TED": {
+      "name": "TED",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "POOL": {
+      "name": "POOL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HAI": {
+      "name": "HAI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DXGM": {
+      "name": "DXGM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ATR": {
+      "name": "ATR",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MEMEFI": {
+      "name": "MEMEFI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CATE": {
+      "name": "CATE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XPLA": {
+      "name": "XPLA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CYBER": {
+      "name": "CYBER",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "QANX": {
+      "name": "QANX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "TROLL": {
+      "name": "TROLL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NVDAX": {
+      "name": "NVDAX",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "GLQ": {
+      "name": "GLQ",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "LBTC": {
+      "name": "LBTC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VELODROME": {
+      "name": "VELODROME",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "UOS": {
+      "name": "UOS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "KRL": {
+      "name": "KRL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "USTC": {
+      "name": "USTC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AI": {
+      "name": "AI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HFT": {
+      "name": "HFT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ATS": {
+      "name": "ATS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MLK": {
+      "name": "MLK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "10SET": {
+      "name": "10SET",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SOIL": {
+      "name": "SOIL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "XRD": {
+      "name": "XRD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CFG": {
+      "name": "CFG",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SNS": {
+      "name": "SNS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "DCK": {
+      "name": "DCK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "IBFK": {
+      "name": "IBFK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "UP": {
+      "name": "UP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "PORTAL": {
+      "name": "PORTAL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NOS": {
+      "name": "NOS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WLD": {
+      "name": "WLD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "HORD": {
+      "name": "HORD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "FORM": {
+      "name": "FORM",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CUMMIES": {
+      "name": "CUMMIES",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "W": {
+      "name": "W",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AMP": {
+      "name": "AMP",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "WEN": {
+      "name": "WEN",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "VNO": {
+      "name": "VNO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "B3X": {
+      "name": "B3X",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SWAY": {
+      "name": "SWAY",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SINGLE": {
+      "name": "SINGLE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "BABI": {
+      "name": "BABI",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ALEPH": {
+      "name": "ALEPH",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ONDO": {
+      "name": "ONDO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RAD": {
+      "name": "RAD",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RITE": {
+      "name": "RITE",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "RPL": {
+      "name": "RPL",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ZK": {
+      "name": "ZK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "G": {
+      "name": "G",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "NBLU": {
+      "name": "NBLU",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "KT": {
+      "name": "KT",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AEVO": {
+      "name": "AEVO",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CBK": {
+      "name": "CBK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "CETUS": {
+      "name": "CETUS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "STOS": {
+      "name": "STOS",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "SWFTC": {
+      "name": "SWFTC",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "MANTA": {
+      "name": "MANTA",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ISK": {
+      "name": "ISK",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "AIOZ": {
+      "name": "AIOZ",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    },
+    "ASTER": {
+      "name": "ASTER",
+      "current_price": 0,
+      "previous_price": null,
+      "change_percent": 0.0
+    }
+  }
+}
