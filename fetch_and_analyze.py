@@ -24,7 +24,6 @@ def fetch_all_prices():
     while True:
         try:
             print(f"📥 در حال دریافت صفحه {page}...")
-            # افزودن timeout و هدرهای کامل
             resp = requests.get(
                 API_BASE_URL,
                 params={"pageSize": 100, "page": page, "base": "usdt"},
@@ -33,7 +32,7 @@ def fetch_all_prices():
                     "Content-Type": "application/json",
                     "User-Agent": "GitHub-Action-Monitor/1.0"
                 },
-                timeout=30  # افزایش timeout
+                timeout=30
             )
             
             print(f"📊 وضعیت پاسخ: {resp.status_code}")
@@ -41,7 +40,6 @@ def fetch_all_prices():
             
             resp.raise_for_status()
             
-            # بررسی Content-Type
             content_type = resp.headers.get('Content-Type', '')
             if 'application/json' not in content_type:
                 print(f"⚠️ نوع محتوای غیرمنتظره: {content_type}")
@@ -50,7 +48,6 @@ def fetch_all_prices():
             
             data = resp.json()
             
-            # لاگ کردن کلیدهای اصلی پاسخ
             print(f"🔑 کلیدهای پاسخ: {list(data.keys())}")
             print(f"✅ success: {data.get('success')}")
             print(f"📝 message: {data.get('message')}")
@@ -64,7 +61,6 @@ def fetch_all_prices():
                 print(f"❌ API خطا داد: {error_msg}")
                 break
                 
-            # استخراج امن آیتم‌ها
             result = data.get("result", {})
             if not isinstance(result, dict):
                 print(f"⚠️ 'result' یک دیکشنری نیست: {type(result)}")
@@ -78,7 +74,6 @@ def fetch_all_prices():
             all_items.extend(items)
             print(f"✅ {len(items)} آیتم از صفحه {page} دریافت شد (کل: {len(all_items)})")
             
-            # استخراج اطلاعات صفحه‌بندی
             meta = result.get("meta", {})
             paginate_helper = meta.get("paginateHelper", {})
             current_page = paginate_helper.get("currentPage", page)
@@ -143,27 +138,30 @@ def save_history(history):
         print(f"❌ خطا در ذخیره تاریخچه: {e}")
 
 def calculate_changes(current, previous):
-    """محاسبه درصد تغییرات با بررسی کامل"""
+    """
+    محاسبه درصد تغییرات با استفاده از فیلد صحیح قیمت.
+    # ** تغییر کلیدی: استفاده از currency_price به جای price **
+    """
     changes = {}
     if not current:
         print("⚠️ لیست قیمت‌های فعلی خالی است")
         return changes
 
-    # ایجاد دیکشنری از قیمت‌های قبلی
     prev_dict = {}
     if previous:
         for item in previous:
             slug = item.get("slug")
-            price = item.get("price")
+            # تغییر: خواندن قیمت از فیلد صحیح
+            price = item.get("currency_price") or item.get("quote")
             if slug and price is not None:
                 prev_dict[slug] = price
         print(f"📊 {len(prev_dict)} قیمت قبلی برای مقایسه موجود است")
 
-    # محاسبه تغییرات
     skipped = 0
     for item in current:
         slug = item.get("slug")
-        price = item.get("price")
+        # تغییر: خواندن قیمت از فیلد صحیح
+        price = item.get("currency_price") or item.get("quote")
         
         if not slug or price is None:
             skipped += 1
@@ -183,7 +181,7 @@ def calculate_changes(current, previous):
         }
     
     if skipped:
-        print(f"⚠️ {skipped} آیتم به دلیل عدم وجود slug یا price نادیده گرفته شد")
+        print(f"⚠️ {skipped} آیتم به دلیل عدم وجود slug یا قیمت نادیده گرفته شد")
     
     print(f"✅ تغییرات برای {len(changes)} ارز محاسبه شد")
     return changes
@@ -211,23 +209,20 @@ def generate_files(top_gainers, top_losers, all_changes, timestamp):
     else:
         sorted_all = sorted(all_changes.values(), key=lambda x: x["change_percent"], reverse=True)
         
-        # بخش برترین رشدها
         gainers_str = "\n".join([
-            f"{i+1}. **{c['name']}**: {c['change_percent']:+.2f}% (قیمت: {c['current_price']:,.0f} تومان)"
+            f"{i+1}. **{c['name']}**: {c['change_percent']:+.2f}% (قیمت: {c['current_price']:,.2f} دلار)"
             for i, c in enumerate(top_gainers)
         ])
         
-        # بخش برترین افت‌ها
         losers_str = "\n".join([
-            f"{i+1}. **{c['name']}**: {c['change_percent']:+.2f}% (قیمت: {c['current_price']:,.0f} تومان)"
+            f"{i+1}. **{c['name']}**: {c['change_percent']:+.2f}% (قیمت: {c['current_price']:,.2f} دلار)"
             for i, c in enumerate(top_losers)
         ])
         
-        # جدول تغییرات
         table_rows = ""
         for i, coin in enumerate(sorted_all[:20], 1):
             emoji = "🟢" if coin["change_percent"] > 0 else ("🔴" if coin["change_percent"] < 0 else "⚪")
-            table_rows += f"| {i} | {coin['name']} | {coin['current_price']:,.0f} | {coin['change_percent']:+.2f}% {emoji} |\n"
+            table_rows += f"| {i} | {coin['name']} | {coin['current_price']:,.2f} | {coin['change_percent']:+.2f}% {emoji} |\n"
         
         readme_body = f"""# 📊 Bitbarg Market Monitor (گزارش زنده)
 
@@ -245,7 +240,7 @@ def generate_files(top_gainers, top_losers, all_changes, timestamp):
 ---
 
 ## 📋 ۲۰ ارز با بیشترین تغییرات
-| رتبه | ارز | قیمت (تومان) | تغییر ۲۴ ساعته |
+| رتبه | ارز | قیمت (دلار) | تغییر ۲۴ ساعته |
 |------|-----|-------------|----------------|
 {table_rows}
 
