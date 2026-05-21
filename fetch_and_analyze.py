@@ -56,7 +56,7 @@ def fetch_page_with_retry(page):
             if not data.get("success"):
                 print(f"⚠️ خطا از API: {data.get('message')}")
                 if attempt < MAX_RETRIES:
-                    time.sleep(5 * attempt)  # صبر: ۵، ۱۰، ۱۵ ثانیه
+                    time.sleep(5 * attempt)
                     continue
                 return None
             return data
@@ -83,7 +83,7 @@ def fetch_all_prices():
     while True:
         data = fetch_page_with_retry(page)
         if data is None:
-            print(f"⚠️ پایان زودهنگام در صفحه {page}")
+            print(f"⚠️ دریافت صفحه {page} ناموفق بود. با داده‌های موجود ادامه می‌دهیم.")
             break
         items = data["result"]["items"]
         if not items:
