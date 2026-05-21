@@ -1,0 +1,17 @@
+🚀 شروع تحلیل...
+📥 دریافت صفحه 1...
+📥 دریافت صفحه 2...
+❌ خطا در دریافت: 502 Server Error: Bad Gateway for url: https://api.bitbarg.com/api/v1/docs/prices?pageSize=100&page=2&base=usdt
+Traceback (most recent call last):
+  File "/home/runner/work/my-subs/my-subs/fetch_and_analyze.py", line 52, in fetch_all_prices
+    resp.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://api.bitbarg.com/api/v1/docs/prices?pageSize=100&page=2&base=usdt
+🔥 رشدها: FIDA, TORN, MINA, OGN, CELR
+❄️ افت‌ها: YFII, SANTOS, FLUX, ICP, RUNE
+⚡ نوسان: 1 ارز
+✅ README ذخیره شد
+✅ فایل‌های JSON ذخیره شدند
+✅ داشبورد ذخیره شد
+✅ پایان موفق
