@@ -13,7 +13,7 @@ jobs:
   fetch-and-analyze:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write  # برای push کردن تغییرات به مخزن
     timeout-minutes: 10
 
     steps:
