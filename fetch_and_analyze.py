@@ -11,8 +11,24 @@ README_FILE = "README.md"
 REPORT_FILE = "market_report.json"
 LATEST_FILE = "latest.json"
 DASHBOARD_FILE = "index.html"
+DEBUG_LOG = "debug.log"
 TOP_N = 5
 VOLATILITY_THRESHOLD = 2.0
+
+# --- هدایت print به فایل لاگ ---
+class Tee:
+    def __init__(self, *files):
+        self.files = files
+    def write(self, text):
+        for f in self.files:
+            f.write(text)
+    def flush(self):
+        for f in self.files:
+            f.flush()
+
+log_file = open(DEBUG_LOG, "w", encoding="utf-8")
+sys.stdout = Tee(sys.stdout, log_file)
+sys.stderr = Tee(sys.stderr, log_file)
 
 def get_price(item):
     for field in ["currency_price", "quote", "price"]:
@@ -26,6 +42,7 @@ def fetch_all_prices():
     page = 1
     while True:
         try:
+            print(f"📥 دریافت صفحه {page}...")
             resp = requests.get(
                 API_BASE_URL,
                 params={"pageSize": 100, "page": page, "base": "usdt"},
@@ -99,12 +116,10 @@ def write_readme(top_gainers, top_losers, volatile, changes, timestamp):
         lines.append(f"**🕒 آخرین به‌روزرسانی:** `{timestamp}`")
         lines.append(f"**📈 تعداد ارزهای ردیابی‌شده:** `{len(changes)}`")
         lines.append("")
-
         has_changes = any(c["change_percent"] != 0.0 for c in changes.values())
         if not has_changes:
             lines.append("> ⚠️ این اولین اجراست. درصد تغییرات از اجرای بعدی محاسبه می‌شود.")
             lines.append("")
-
         lines.append("---")
         lines.append("## 🔥 بیشترین رشدها")
         lines.append("")
@@ -114,7 +129,6 @@ def write_readme(top_gainers, top_losers, volatile, changes, timestamp):
         else:
             lines.append("داده‌ای موجود نیست")
         lines.append("")
-
         lines.append("## ❄️ بیشترین افت‌ها")
         lines.append("")
         if top_losers:
@@ -123,7 +137,6 @@ def write_readme(top_gainers, top_losers, volatile, changes, timestamp):
         else:
             lines.append("داده‌ای موجود نیست")
         lines.append("")
-
         lines.append(f"## ⚡ نوسان‌های بالا (تغییر بیش از {VOLATILITY_THRESHOLD}٪)")
         lines.append("")
         if volatile:
@@ -133,7 +146,6 @@ def write_readme(top_gainers, top_losers, volatile, changes, timestamp):
         else:
             lines.append("نوسان شدیدی مشاهده نشد.")
         lines.append("")
-
         lines.append("---")
         lines.append("## 📋 ۲۰ ارز برتر")
         lines.append("")
@@ -145,34 +157,38 @@ def write_readme(top_gainers, top_losers, volatile, changes, timestamp):
             lines.append(f"| {i} | {c['name']} | {c['current_price']:,.2f} | {c['change_percent']:+.2f}% {emoji} |")
         lines.append("")
         lines.append("*🤖 خودکار توسط GitHub Actions*")
-
         with open(README_FILE, "w", encoding="utf-8") as f:
             f.write("\n".join(lines))
         print("✅ README ذخیره شد")
     except Exception as e:
         print(f"❌ خطا در نوشتن README: {e}")
+        traceback.print_exc()
 
 def write_json_files(top_gainers, top_losers, volatile, changes, timestamp):
-    report = {
-        "timestamp": timestamp,
-        "top_gainers": top_gainers,
-        "top_losers": top_losers,
-        "volatile": volatile[:20],
-        "all_changes": changes
-    }
-    with open(REPORT_FILE, "w", encoding="utf-8") as f:
-        json.dump(report, f, indent=2, ensure_ascii=False)
-    latest = {
-        "timestamp": timestamp,
-        "total_coins": len(changes),
-        "top_gainers": top_gainers,
-        "top_losers": top_losers,
-        "volatile": volatile[:20],
-        "all": changes
-    }
-    with open(LATEST_FILE, "w", encoding="utf-8") as f:
-        json.dump(latest, f, indent=2, ensure_ascii=False)
-    print("✅ فایل‌های JSON ذخیره شدند")
+    try:
+        report = {
+            "timestamp": timestamp,
+            "top_gainers": top_gainers,
+            "top_losers": top_losers,
+            "volatile": volatile[:20],
+            "all_changes": changes
+        }
+        with open(REPORT_FILE, "w", encoding="utf-8") as f:
+            json.dump(report, f, indent=2, ensure_ascii=False)
+        latest = {
+            "timestamp": timestamp,
+            "total_coins": len(changes),
+            "top_gainers": top_gainers,
+            "top_losers": top_losers,
+            "volatile": volatile[:20],
+            "all": changes
+        }
+        with open(LATEST_FILE, "w", encoding="utf-8") as f:
+            json.dump(latest, f, indent=2, ensure_ascii=False)
+        print("✅ فایل‌های JSON ذخیره شدند")
+    except Exception as e:
+        print(f"❌ خطا در نوشتن JSON: {e}")
+        traceback.print_exc()
 
 def write_dashboard():
     html = """<!DOCTYPE html>
@@ -219,16 +235,17 @@ def main():
         current_prices = fetch_all_prices()
     except Exception as e:
         print(f"❌ دریافت قیمت‌ها شکست خورد: {e}")
+        traceback.print_exc()
         current_prices = []
 
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     if not current_prices:
-        # حتی با خطا، فایل‌ها با پیام خطا ساخته شوند
         write_readme([], [], [], {}, timestamp)
         write_json_files([], [], [], {}, timestamp)
         write_dashboard()
         print("⚠️ به دلیل عدم دریافت داده، فایل‌ها با محتوای خطا ساخته شدند.")
+        log_file.close()
         sys.exit(1)
 
     history = load_history()
@@ -239,6 +256,7 @@ def main():
         write_readme([], [], [], {}, timestamp)
         write_json_files([], [], [], {}, timestamp)
         write_dashboard()
+        log_file.close()
         sys.exit(1)
 
     sorted_items = sorted(changes.values(), key=lambda x: x["change_percent"], reverse=True)
@@ -259,7 +277,9 @@ def main():
     write_readme(top_gainers, top_losers, volatile, changes, timestamp)
     write_json_files(top_gainers, top_losers, volatile, changes, timestamp)
     write_dashboard()
+
     print("✅ پایان موفق")
+    log_file.close()
 
 if __name__ == "__main__":
     main()
