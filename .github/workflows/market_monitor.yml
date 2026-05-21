@@ -34,7 +34,7 @@ jobs:
 
       - name: 🔍 اجرای اسکریپت تحلیل
         run: python fetch_and_analyze.py
-        continue-on-error: true   # ادامه اجرا حتی در صورت خطا
+        continue-on-error: true
 
       - name: 💾 ثبت تغییرات در مخزن
         run: |
