@@ -3,8 +3,10 @@ import json
 import os
 import sys
 import traceback
+import time
 from datetime import datetime, timezone
 
+# --- تنظیمات ---
 API_BASE_URL = "https://api.bitbarg.com/api/v1/docs/prices"
 HISTORY_FILE = "price_history.json"
 README_FILE = "README.md"
@@ -14,6 +16,7 @@ DASHBOARD_FILE = "index.html"
 DEBUG_LOG = "debug.log"
 TOP_N = 5
 VOLATILITY_THRESHOLD = 2.0
+MAX_RETRIES = 3  # تعداد تلاش‌های مجدد برای دریافت هر صفحه
 
 # --- هدایت print به فایل لاگ ---
 class Tee:
@@ -37,35 +40,60 @@ def get_price(item):
             return float(val)
     return 0.0
 
-def fetch_all_prices():
-    all_items = []
-    page = 1
-    while True:
+def fetch_page_with_retry(page):
+    """دریافت یک صفحه با قابلیت تلاش مجدد"""
+    for attempt in range(1, MAX_RETRIES + 1):
         try:
-            print(f"📥 دریافت صفحه {page}...")
+            print(f"📥 دریافت صفحه {page} (تلاش {attempt}/{MAX_RETRIES})...")
             resp = requests.get(
                 API_BASE_URL,
                 params={"pageSize": 100, "page": page, "base": "usdt"},
                 headers={"Accept": "application/json", "User-Agent": "GitHub-Action"},
-                timeout=15
+                timeout=30
             )
             resp.raise_for_status()
             data = resp.json()
             if not data.get("success"):
                 print(f"⚠️ خطا از API: {data.get('message')}")
-                break
-            items = data["result"]["items"]
-            if not items:
-                break
-            all_items.extend(items)
-            meta = data["result"]["meta"]["paginateHelper"]
-            if meta["currentPage"] >= meta["lastPage"]:
-                break
-            page += 1
-        except Exception as e:
-            print(f"❌ خطا در دریافت: {e}")
+                if attempt < MAX_RETRIES:
+                    time.sleep(5 * attempt)  # صبر: ۵، ۱۰، ۱۵ ثانیه
+                    continue
+                return None
+            return data
+        except requests.exceptions.Timeout as e:
+            print(f"⏰ timeout در صفحه {page}: {e}")
+            if attempt < MAX_RETRIES:
+                time.sleep(5 * attempt)
+                continue
+            return None
+        except requests.exceptions.RequestException as e:
+            print(f"❌ خطا در دریافت صفحه {page}: {e}")
+            if attempt < MAX_RETRIES:
+                print(f"🔄 تلاش مجدد در {5*attempt} ثانیه...")
+                time.sleep(5 * attempt)
+                continue
             traceback.print_exc()
+            return None
+    return None
+
+def fetch_all_prices():
+    """دریافت تمام قیمت‌ها با مدیریت خطا و تلاش مجدد"""
+    all_items = []
+    page = 1
+    while True:
+        data = fetch_page_with_retry(page)
+        if data is None:
+            print(f"⚠️ پایان زودهنگام در صفحه {page}")
             break
+        items = data["result"]["items"]
+        if not items:
+            break
+        all_items.extend(items)
+        print(f"✅ {len(items)} آیتم از صفحه {page} دریافت شد")
+        meta = data["result"]["meta"]["paginateHelper"]
+        if meta["currentPage"] >= meta["lastPage"]:
+            break
+        page += 1
     return all_items
 
 def load_history():
