@@ -20,10 +20,12 @@
 📥 دریافت صفحه 10 (تلاش 1/3)...
 ✅ 100 آیتم از صفحه 10 دریافت شد
 📥 دریافت صفحه 11 (تلاش 1/3)...
+⏰ timeout در صفحه 11: HTTPSConnectionPool(host='api.bitbarg.com', port=443): Read timed out. (read timeout=30)
+📥 دریافت صفحه 11 (تلاش 2/3)...
 ✅ 26 آیتم از صفحه 11 دریافت شد
-🔥 رشدها: TORN, FIDA, YFII, GMT, NEAR
-❄️ افت‌ها: GLMR, UNFI, ZEC, XMR, CELR
-⚡ نوسان: 2 ارز
+🔥 رشدها: TROLL, ORO, SBR, D2T, AVL
+❄️ افت‌ها: SXP, GMMT, PLSPAD, ATS, ULTI
+⚡ نوسان: 22 ارز
 ✅ README ذخیره شد
 ✅ فایل‌های JSON ذخیره شدند
 ✅ داشبورد ذخیره شد
