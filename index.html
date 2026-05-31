@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هیئت منصفه هوش مصنوعی | AI Jury</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+        .icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #f7971e, #ffd200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #a0a0a0;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            margin: 20px 0;
+            text-align: right;
+        }
+        .card h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #ffd200;
+        }
+        .card p {
+            line-height: 1.8;
+            color: #ccc;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .feature-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+        .feature-item .emoji {
+            font-size: 40px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #f7971e, #ffd200);
+            color: #1a1a2e;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 20px 0;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(247, 151, 30, 0.3);
+        }
+        .footer {
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .footer a {
+            color: #f7971e;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">⚖️</div>
+        <h1>هیئت منصفه هوش مصنوعی</h1>
+        <p class="subtitle">پرسش شما، پاسخ چند مدل هوش مصنوعی، و یک قاضی بی‌طرف</p>
+
+        <div class="card">
+            <h2>📋 این پروژه چه می‌کند؟</h2>
+            <p>
+                یک سوال مطرح می‌کنید. چند مدل هوش مصنوعی مختلف (ChatGPT، Claude، Gemini و...) 
+                به آن پاسخ می‌دهند. سپس یک <strong>قاضی هوش مصنوعی</strong> پاسخ‌ها را بررسی کرده 
+                و رأی نهایی را صادر می‌کند. نتیجه به صورت یک Issue در گیت‌هاب منتشر می‌شود.
+            </p>
+        </div>
+
+        <div class="features">
+            <div class="feature-item">
+                <span class="emoji">🤖</span>
+                <h3>مدل‌های متنوع</h3>
+                <p>پاسخ از ChatGPT، Claude و مدل‌های دیگر</p>
+            </div>
+            <div class="feature-item">
+                <span class="emoji">👨‍⚖️</span>
+                <h3>قاضی هوش مصنوعی</h3>
+                <p>بررسی و جمع‌بندی نهایی توسط یک مدل قاضی</p>
+            </div>
+            <div class="feature-item">
+                <span class="emoji">📢</span>
+                <h3>شفافیت کامل</h3>
+                <p>نمایش عمومی نتایج در قالب Issue</p>
+            </div>
+        </div>
+
+        <a href="https://github.com/KH-Danial/ai-jury/issues/new?template=question.yml" class="btn" target="_blank">
+            ✍️ طرح پرسش جدید
+        </a>
+
+        <div class="card">
+            <h2>📂 آخرین پرسش‌ها و نتایج</h2>
+            <p>
+                تمام پرسش‌ها و رأی‌های صادر شده در 
+                <a href="https://github.com/KH-Danial/ai-jury/issues" target="_blank" style="color: #ffd200;">
+                    بخش Issues مخزن
+                </a> 
+                قابل مشاهده هستند.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>
+                ساخته شده با ❤️ توسط 
+                <a href="https://github.com/KH-Danial" target="_blank">KH-Danial</a> | 
+                <a href="https://github.com/KH-Danial/ai-jury" target="_blank">مخزن پروژه</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
